@@ -7,11 +7,7 @@ public class Main {
 		
 		System.out.println(a);
 		System.out.println(b);
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> refs/remotes/origin/master
 		a = 99;
 		System.out.println(a);
 		System.out.println(b);
