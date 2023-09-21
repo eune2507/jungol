@@ -1,4 +1,4 @@
-package q501;
+package jungol0920.q501;
 
 public class Main {
 	public static void main(String[] args) {

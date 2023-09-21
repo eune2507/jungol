@@ -1,4 +1,4 @@
-package q555;
+package jungol0920.q555;
 
 import java.util.Scanner;
 

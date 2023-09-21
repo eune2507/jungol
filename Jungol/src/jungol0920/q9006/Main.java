@@ -1,4 +1,4 @@
-package q9006;
+package jungol0920.q9006;
 
 public class Main {
 
