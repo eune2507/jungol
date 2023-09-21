@@ -8,6 +8,5 @@ public class Main {
 		String strX = sc.next();
 		sc.close();
 		System.out.print(strX+strX);
-
 	}
 }
