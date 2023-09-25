@@ -11,7 +11,7 @@ public class Main {
 		double dyd = 91.44;
 		sc.close();
 		
-		System.out.print("10.1yard = ");
+		System.out.print(a+"yard = ");
 		System.out.printf("%3.1f",a*dyd);
 		System.out.print("cm");
 
