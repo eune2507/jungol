@@ -1,0 +1,18 @@
+package jungol0925.q517;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		double c = sc.nextDouble();
+		sc.close();
+		
+		System.out.printf("%3.3f\n%3.3f\n%3.3f", a, b, c);
+
+	}
+
+}
