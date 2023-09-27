@@ -5,11 +5,12 @@ public class Main {
 		java.util.Calendar cal = java.util.Calendar.getInstance();
 		
 		int a = 0;
+		int b = 0;
+		int c = 0;
 		a = cal.get(java.util.Calendar.YEAR)-1900 ;
-		a += cal.get(java.util.Calendar.MONTH);
-		a += cal.get(java.util.Calendar.DATE);
+		b = a + cal.get(java.util.Calendar.MONTH);
+		c = b +cal.get(java.util.Calendar.DATE);
 		
-		System.out.printf("%d %d %d", cal.get(java.util.Calendar.YEAR)-1900,
-				cal.get(java.util.Calendar.YEAR)-1900+cal.get(java.util.Calendar.MONTH), a);
+		System.out.printf("%d %d %d", c, b, a);
 	}
 }
