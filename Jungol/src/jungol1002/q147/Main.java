@@ -1,4 +1,4 @@
-package jungol1002.q145;
+package jungol1002.q147;
 
 import java.util.Scanner;
 
@@ -9,16 +9,18 @@ public class Main {
 		int num = sc.nextInt();
 		sc.close();
 		
-		for(int i = 1; i <= num; i++) {
-			for(int j = num*2; j>2*i;j--) {
+		int a = 1;
+		
+		for(int i = 1; i<=num; i++) {
+			for(int k = 2; k<2*i; k++) {
 				System.out.print(" ");
 			}
-			for(int k = 1; k<=i; k++) {
-				System.out.print(k+" ");
+			for(int j =num; j>=i; j--) {
+				System.out.print(a+" ");
+				a++;
 			}
 			System.out.println();
 		}
-
 	}
 
 }
