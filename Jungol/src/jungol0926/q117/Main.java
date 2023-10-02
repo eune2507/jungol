@@ -10,6 +10,8 @@ public class Main {
 		double b = sc.nextDouble();
 		double c = sc.nextDouble();
 		
+		sc.close();
+		
 		int sum = (int)a + (int)b + (int)c;
 		int avg = (int)(a+b+c)/3;
 		

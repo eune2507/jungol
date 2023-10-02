@@ -7,7 +7,7 @@ public class Main2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		char grade = sc.next().charAt(0);
-
+		sc.close();
 		if (grade==65) {
 			System.out.println("Excellent");
 		} else if (grade==66) {

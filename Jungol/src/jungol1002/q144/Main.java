@@ -1,4 +1,4 @@
-package jungol1001.q144;
+package jungol1002.q144;
 
 import java.util.Scanner;
 

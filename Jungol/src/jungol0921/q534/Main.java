@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String grade = scanner.next();
-		
+		scanner.close();
 		switch(grade) {
 		case "A":
 			System.out.println("Excellent");
