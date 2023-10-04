@@ -19,6 +19,7 @@ public class Main {
 		for(int i = n-1; i >=0; i--) {
 			System.out.println(ar[i]);
 		}
+		sc.close();
 
 	}
 
