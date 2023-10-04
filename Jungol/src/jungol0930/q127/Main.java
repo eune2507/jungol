@@ -6,7 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
+		//  while , do-while 로풀어보기 
+		
 		int sum = 0;
 		double avg = 0;
 		int x = 0;
@@ -21,6 +22,8 @@ public class Main {
 			sum += num;
 			x++;
 		}
+		
+
 		avg = (double) sum / x;
 		System.out.println("sum : " + sum);
 		System.out.print("avg : ");

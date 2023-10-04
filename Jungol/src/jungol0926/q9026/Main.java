@@ -3,7 +3,7 @@ package jungol0926.q9026;
 public class Main {
 
 	public static void main(String[] args) {
-		// 1 1 0 1
+		// 1 1 0 1 참이면 1 거짓이면 0 
 		int a = 0;
 		int b = 1;
 		int c = 2;

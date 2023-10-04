@@ -21,7 +21,7 @@ public class Main {
 				break;
 			}
 		}
-
+		
 		System.out.println("odd : " + odd);
 		System.out.println("even : " + even);
 	}

@@ -6,20 +6,20 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		String strX [] = {"J","U","N","G","O","L"};
-		
 		String str = sc.next();
-		
-		for(int i = 0; i<strX.length; i++) {
-			if(strX[i]== str) {
-				System.out.print(i);
-			} else {
-				System.out.print("none");
-			}
-			
-		}
-		
-	}
+		char chaX[] = { 'J', 'U', 'N', 'G', 'O', 'L' };
+		int count = 0;
 
+		for (int i = 0; i < chaX.length; i++) {
+			if (str.charAt(0) == chaX[i]) {
+				System.out.println(i);
+			} else {
+				count++;
+			}
+		}
+		if (count == 6) {
+			System.out.println("none");
+			sc.close();
+		}
+	}
 }
