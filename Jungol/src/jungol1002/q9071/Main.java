@@ -18,10 +18,7 @@ public class Main {
 			if(ar[i]%2==0 && max<ar[i]) {
 				max = ar[i];
 			} 
-			if(ar[i]%2==1 && min>ar[i]) {
-				min = ar[i];
-			}
-			if(ar[i]%2==-1 && min>ar[i]) {
+			if(ar[i]%2!=0 && min>ar[i]) {
 				min = ar[i];
 			}
 		}
