@@ -1,4 +1,4 @@
-package jungol1024.q617.jungol1024.q617;
+package jungol1024.q617;
 
 import java.util.Scanner;
 
