@@ -1,0 +1,26 @@
+package q601;
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String inp = sc.next();
+
+        String ar [] = new String[100];
+        for(int i = 0; i<inp.length(); i++){
+            ar[i] = inp.substring(i,i+1);
+        }
+        for(int i = 0; i<inp.length(); i++){
+            String temp = ar[inp.length()-1];
+            for(int j = inp.length()-1; j>0; j--){
+                ar[j] = ar[j-1];
+            }
+            ar[0] = temp;
+            for(int j = 0; j<inp.length(); j++){
+                System.out.print(ar[j]);
+            }
+            System.out.println();
+        }
+    }
+}
