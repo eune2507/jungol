@@ -1,0 +1,98 @@
+package q618;
+
+import java.util.*;
+
+class Person {
+    private String name;
+    private int height;
+    private double weight;
+    public Person(String name, int height, double weight){
+        this.name = name;
+        this.height = height;
+        this.weight = weight;
+    }
+    public String getName(){
+        return name;
+    }
+    public int getHeight(){
+        return height;
+    }
+    public double getWeight(){
+        return weight;
+    }
+}
+
+class Compare {
+    private Person [] p;
+
+    public Compare(String name1, int height1, double weight1, String name2, int height2, double weight2, String name3, int height3, double weight3, String name4, int height4, double weight4, String name5, int height5, double weight5){
+        p = new Person[5];
+        p[0] = new Person(name1, height1, weight1);
+        p[1] = new Person(name2, height2, weight2);
+        p[2] = new Person(name3, height3, weight3);
+        p[3] = new Person(name4, height4, weight4);
+        p[4] = new Person(name5, height5, weight5);
+    }
+    public void listname(){
+        String [] name = new String[5];
+        for(int i = 0; i<name.length; i++){
+            name[i] = p[i].getName();
+        }
+        Arrays.sort(name);
+        System.out.println("name");
+        for(int j = 0; j<name.length; j++){
+            for(int i = 0; i<p.length; i++){
+                if(name[j].equals(p[i].getName())) {
+                    System.out.print(p[i].getName() + " ");
+                    System.out.print(p[i].getHeight() + " ");
+                    System.out.print(p[i].getWeight() + " ");
+                    System.out.println();
+                }
+            }
+        }
+    }
+    public void listweight(){
+        double [] weight = new double[5];
+        for(int i = 0; i<weight.length; i++){
+            weight[i] = p[i].getWeight();
+        }
+        Arrays.sort(weight);
+        System.out.println("weight");
+        for(int j = weight.length-1; j>=0; j--){
+            for(int i = 0; i<p.length; i++){
+                if(weight[j] == (p[i].getWeight())) {
+                    System.out.print(p[i].getName() + " ");
+                    System.out.print(p[i].getHeight() + " ");
+                    System.out.print(p[i].getWeight() + " ");
+                    System.out.println();
+                }
+            }
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name1 = sc.next();
+        int height1 = sc.nextInt();
+        double weight1 = sc.nextDouble();
+        String name2 = sc.next();
+        int height2 = sc.nextInt();
+        double weight2 = sc.nextDouble();
+        String name3 = sc.next();
+        int height3 = sc.nextInt();
+        double weight3 = sc.nextDouble();
+        String name4 = sc.next();
+        int height4 = sc.nextInt();
+        double weight4 = sc.nextDouble();
+        String name5 = sc.next();
+        int height5 = sc.nextInt();
+        double weight5 = sc.nextDouble();
+
+        Compare com = new Compare(name1, height1, weight1, name2, height2, weight2, name3, height3, weight3, name4, height4, weight4, name5, height5, weight5);
+        com.listname();
+        System.out.println();
+        com.listweight();
+    }
+}
